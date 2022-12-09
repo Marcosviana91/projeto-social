@@ -49,14 +49,15 @@ section#redes-sociais img {
     border-radius: 50%;
     box-shadow: 3px 5px 5px black;
     margin: 10px;
+    transition: .5s;
     /* Inclui a borda como parte do conteúdo */
     box-sizing: border-box;
-}
+} 
 
 section#redes-sociais img:hover {
     border: 2px solid rgba(255, 255, 255, 0.6);
     transform: translate(-3px, -3px);
     box-shadow: 13px 15px 15px black;
-    /* transition: transform .3s; */
-    transition: transform .3s, border .1s;
+    /* transition pode ser aplicada para cada set, separado por , */
+    transition: transform .3s, border .1s, box-shadow .3s;
 }
